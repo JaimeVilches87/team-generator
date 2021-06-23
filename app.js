@@ -131,16 +131,32 @@ const EmployeeQuestions = () => {
                     })
             }
             //when I am Finished is selected then call function to write html
-            else 
-            {
+            else {
                 writeHTML();
             }
         })
 };
 
+
 // function to call render function to return HTML and write it on team.html
+const writeHTML = () => {
+    const dataTemplate = render(employeeArray);
+    fs.writeFileSync('./output/team.html', dataTemplate);
+}
 
 
+const init = async () => {
+    console.log('Welcome To The Team Profile Generator!');
+    try {
+        ManagerQuestions(); //Prompt manager for team information
+    } catch (err) {
+        console.log(err);
+        console.log('There was an error with user input');
+    };
+};
+
+// Function call to initialize app
+init();
 
 // After the user has input all employees desired, call the `render` function (required
 // above) and pass in an array containing all employee objects; the `render` function will
