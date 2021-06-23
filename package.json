@@ -1,0 +1,29 @@
+{
+  "name": "team-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaimeVilches87/team-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JaimeVilches87/team-generator/issues"
+  },
+  "homepage": "https://github.com/JaimeVilches87/team-generator#readme",
+  "devDependencies": {
+    "jest": "^27.0.5"
+  },
+  "dependencies": {
+    "inquirer": "^8.1.1"
+  }
+}
