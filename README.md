@@ -16,7 +16,7 @@ This is a command line application that runs on Node.js and uses Javascript, Inq
 
 Open your favorite web browser and enter the following web address to access.
 
-git@github.com:JaimeVilches87/team-generator.git
+https://jaimevilches87.github.io/team-generator/
 
 <a name="usage"></a>
 ## 3. Usage Tips
