@@ -5,19 +5,12 @@ const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
 const util = require('util');
-
 const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputFile = path.join(OUTPUT_DIR, "team.html");
-
 const render = require("./lib/htmlRenderer");
-
 
 //Array containing employee info that will be used to push into render function
 const employeeArray = [];
-
-
-// Write code to use inquirer to gather information about the development team members,
-// and to create objects for each team member (using the correct classes as blueprints!)
 
 //first ask questions
 const ManagerQuestions = () => {
@@ -50,7 +43,7 @@ const ManagerQuestions = () => {
         })
 };
 
-//first ask if they want to enter an intern, engineer or if they are finished
+//then ask if they want to enter an intern, engineer or if they are finished
 const EmployeeQuestions = () => {
     return inquirer.prompt([
         {
@@ -134,16 +127,13 @@ const EmployeeQuestions = () => {
         })
 };
 
-
 // function to call render function to return HTML and write it on team.html
 const writeHTML = () => {
-    console.log(employeeArray);
+    // console.log(employeeArray);
     const dataTemplate = render(employeeArray);
     fs.writeFileSync(outputFile, dataTemplate);
 
 }
-
-
 const init = async () => {
     console.log('Welcome To The Team Profile Generator!');
     try {
