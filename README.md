@@ -37,6 +37,9 @@ Sample HTML file that is generated
 ![final-page](./assets/media/final.jpg)
 
 Testing the application <br>
+Google Drive video:
+https://drive.google.com/file/d/1xKRGwauulp4PjRhmnmvMgscrbkPlx7XJ/view?usp=sharing
+
 ![Gif demo](./assets/media/demo.gif)
 
 
